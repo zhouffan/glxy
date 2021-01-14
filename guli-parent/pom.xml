@@ -4,6 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>service</module>
+        <module>common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -62,6 +63,8 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+
             <!--mybatis-plus 持久层-->
             <dependency>
                 <groupId>com.baomidou</groupId>
@@ -145,26 +148,26 @@
                 <artifactId>aliyun-java-sdk-core</artifactId>
                 <version>${aliyun-java-sdk-core.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>com.aliyun.oss</groupId>-->
-<!--                <artifactId>aliyun-sdk-oss</artifactId>-->
-<!--                <version>${aliyun-sdk-oss.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.aliyun</groupId>-->
-<!--                <artifactId>aliyun-java-sdk-vod</artifactId>-->
-<!--                <version>${aliyun-java-sdk-vod.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.aliyun</groupId>-->
-<!--                <artifactId>aliyun-java-vod-upload</artifactId>-->
-<!--                <version>${aliyun-java-vod-upload.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.aliyun</groupId>-->
-<!--                <artifactId>aliyun-sdk-vod-upload</artifactId>-->
-<!--                <version>${aliyun-sdk-vod-upload.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>com.aliyun.oss</groupId>-->
+            <!--                <artifactId>aliyun-sdk-oss</artifactId>-->
+            <!--                <version>${aliyun-sdk-oss.version}</version>-->
+            <!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>com.aliyun</groupId>-->
+            <!--                <artifactId>aliyun-java-sdk-vod</artifactId>-->
+            <!--                <version>${aliyun-java-sdk-vod.version}</version>-->
+            <!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>com.aliyun</groupId>-->
+            <!--                <artifactId>aliyun-java-vod-upload</artifactId>-->
+            <!--                <version>${aliyun-java-vod-upload.version}</version>-->
+            <!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>com.aliyun</groupId>-->
+            <!--                <artifactId>aliyun-sdk-vod-upload</artifactId>-->
+            <!--                <version>${aliyun-sdk-vod-upload.version}</version>-->
+            <!--            </dependency>-->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
@@ -175,18 +178,20 @@
                 <artifactId>json</artifactId>
                 <version>${json.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>commons-dbutils</groupId>-->
-<!--                <artifactId>commons-dbutils</artifactId>-->
-<!--                <version>${commons-dbutils.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.alibaba.otter</groupId>-->
-<!--                <artifactId>canal.client</artifactId>-->
-<!--                <version>${canal.client.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>commons-dbutils</groupId>-->
+            <!--                <artifactId>commons-dbutils</artifactId>-->
+            <!--                <version>${commons-dbutils.version}</version>-->
+            <!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>com.alibaba.otter</groupId>-->
+            <!--                <artifactId>canal.client</artifactId>-->
+            <!--                <version>${canal.client.version}</version>-->
+            <!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
+
+
 
     <build>
         <plugins>
