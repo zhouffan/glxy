@@ -11,6 +11,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+//https://blog.csdn.net/zhenghongcs/article/details/107373707
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -20,7 +21,7 @@ public class SwaggerConfig {
                 .groupName("webApi")
                 .apiInfo(webApiInfo())
                 .select()
-                .paths(Predicates.not(PathSelectors.regex("/admin/.*")))
+//                .paths(Predicates.not(PathSelectors.regex("/admin/.*")))  //拦截了
                 .paths(Predicates.not(PathSelectors.regex("/error.*")))
                 .build();
     }
