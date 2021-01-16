@@ -4,7 +4,12 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-
+/**
+ * @Author: 进击的烧年.
+ * @Date: 2021-01-17
+ * @Description:
+ *
+ */
 public class ExceptionUtil {
     public static String getMessage(Exception e) {
         StringWriter sw = null;
@@ -13,8 +18,9 @@ public class ExceptionUtil {
             sw = new StringWriter();
             pw = new PrintWriter(sw);
             /**
-             * 将出错的栈信息输出到printWriter中 e.printStackTrace(pw);
+             * 将出错的栈信息输出到printWriter中
              */
+            e.printStackTrace(pw);
             pw.flush();
             sw.flush();
         } finally {

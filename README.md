@@ -3,6 +3,10 @@ learn springboot/vue
 
 ## java
 
+1 项目（spring initializr）-> 新建module（maven）
+
+2 swagger:  .paths(Predicates.not(PathSelectors.regex("/admin/.*")))  //拦截了该地址，不会显示
+
 
 
 
