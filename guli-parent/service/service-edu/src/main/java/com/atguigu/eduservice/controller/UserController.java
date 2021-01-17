@@ -26,7 +26,7 @@ import java.util.List;
  */
 @Api(value="讲师管理")
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/admin/edu/user")
 public class UserController {
 
     @ApiOperation(value = "登录")

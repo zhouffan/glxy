@@ -7,6 +7,29 @@ learn springboot/vue
 
 2 swagger:  .paths(Predicates.not(PathSelectors.regex("/admin/.*")))  //拦截了该地址，不会显示
 
+3 请求参数
+
+```java
+//http://localhost:8101/admin/edu/teacher/1/5?begin=&end=&level=1&name=xx
+@GetMapping("{page}/{limit}")
+public R pageQuery(@PathVariable Long page,  @PathVariable Long limit,  TeacherQuery teacherQuery){
+        log.info(teacherQuery.toString());
+        Page<Teacher> pageParam = new Page<>(page, limit);
+        teacherService.pageQuery(pageParam, teacherQuery);
+        List<Teacher> records = pageParam.getRecords();
+}
+```
+
+4 图片存储方式： 阿里云oss对象存储
+
+5 表格操作： easyExcel
+
+
+
+
+
+
+
 
 
 
@@ -206,7 +229,7 @@ gmt_create, gmt_modified 的类型均为 datetime 类型，前者现在时表示
 
 1 vs code : **Shift + Option + F**
 
-2 nginx
+2 nginx   :   nginx -s reload
 
 ```
 mac 使用brew安装nginx 各种命令

@@ -42,6 +42,7 @@
         <aliyun-java-sdk-vod.version>2.15.2</aliyun-java-sdk-vod.version>
         <aliyun-java-vod-upload.version>1.4.11</aliyun-java-vod-upload.version>
         <aliyun-sdk-vod-upload.version>1.4.11</aliyun-sdk-vod-upload.version>
+        <aliyun-sdk-oss.version>3.10.2</aliyun-sdk-oss.version>
         <fastjson.version>1.2.28</fastjson.version>
         <gson.version>2.8.2</gson.version>
         <json.version>20170516</json.version>
@@ -49,6 +50,7 @@
         <canal.client.version>1.1.0</canal.client.version>
         <docker.image.prefix>zx</docker.image.prefix>
         <cloud-alibaba.version>0.2.2.RELEASE</cloud-alibaba.version>
+        <com.alibaba.easyexcel>2.1.1</com.alibaba.easyexcel>
     </properties>
 
     <dependencyManagement>
@@ -114,7 +116,6 @@
             </dependency>
 
 
-
             <!--aliyunOSS-->
             <dependency>
                 <groupId>com.aliyun.oss</groupId>
@@ -174,11 +175,11 @@
                 <artifactId>aliyun-java-sdk-core</artifactId>
                 <version>${aliyun-java-sdk-core.version}</version>
             </dependency>
-            <!--            <dependency>-->
-            <!--                <groupId>com.aliyun.oss</groupId>-->
-            <!--                <artifactId>aliyun-sdk-oss</artifactId>-->
-            <!--                <version>${aliyun-sdk-oss.version}</version>-->
-            <!--            </dependency>-->
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${aliyun-sdk-oss.version}</version>
+            </dependency>
             <!--            <dependency>-->
             <!--                <groupId>com.aliyun</groupId>-->
             <!--                <artifactId>aliyun-java-sdk-vod</artifactId>-->
@@ -214,9 +215,14 @@
             <!--                <artifactId>canal.client</artifactId>-->
             <!--                <version>${canal.client.version}</version>-->
             <!--            </dependency>-->
+            <!-- https://mvnrepository.com/artifact/com.alibaba/easyexcel -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <version>${com.alibaba.easyexcel}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
 
 
     <build>

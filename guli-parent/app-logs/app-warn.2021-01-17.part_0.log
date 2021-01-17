@@ -45,3 +45,78 @@
 2021-01-17 16:25:09,213 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
 2021-01-17 16:28:01,790 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
 2021-01-17 16:28:01,794 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:20:39,199 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:20:39,204 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:21:52,417 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:21:52,421 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:22:28,776 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:22:28,781 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:25:41,240 [main] WARN  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'constantPropertiesUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'aliyun.oss.file.filehost' in value "${aliyun.oss.file.filehost}"
+2021-01-17 17:27:53,408 [main] WARN  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'constantPropertiesUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'aliyun.oss.file.filehost' in value "${aliyun.oss.file.filehost}"
+2021-01-17 17:31:15,329 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:31:15,335 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:31:23,457 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:31:23,467 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:32:11,335 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:32:11,340 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:35:30,990 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:35:30,996 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:44:28,501 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:44:28,507 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:44:35,563 [http-nio-8002-exec-1] WARN  [com.aliyun.oss] LogUtils.java:70 - [Server]Unable to execute HTTP request: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 60040703D9A902303666D294
+[HostId]: guli-file-zdf.oss-cn-chengdu.aliyuncs.com
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>60040703D9A902303666D294</RequestId>
+  <HostId>guli-file-zdf.oss-cn-chengdu.aliyuncs.com</HostId>
+</Error>
+
+2021-01-17 17:50:10,783 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:50:10,789 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 17:50:19,304 [http-nio-8002-exec-1] WARN  [com.aliyun.oss] LogUtils.java:70 - [Server]Unable to execute HTTP request: You have no right to access this object because of bucket acl.
+[ErrorCode]: AccessDenied
+[RequestId]: 6004085B5CCCDD36323629EC
+[HostId]: guli-file-zdf.oss-cn-chengdu.aliyuncs.com
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>6004085B5CCCDD36323629EC</RequestId>
+  <HostId>guli-file-zdf.oss-cn-chengdu.aliyuncs.com</HostId>
+</Error>
+
+2021-01-17 18:04:50,360 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 18:04:50,368 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:18:06,468 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:18:06,473 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:19:12,496 [http-nio-8101-exec-7] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 19:21:00,966 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:21:00,972 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:21:14,007 [http-nio-8101-exec-1] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 19:24:11,988 [http-nio-8101-exec-3] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 19:25:50,168 [http-nio-8101-exec-3] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 19:28:01,050 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:28:01,056 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:28:11,343 [http-nio-8101-exec-1] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 19:28:22,959 [http-nio-8101-exec-2] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 19:29:10,295 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:29:10,301 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:33:22,606 [http-nio-8101-exec-1] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 19:34:19,974 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:34:19,980 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:35:42,625 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:35:42,633 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:37:41,509 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:37:41,517 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:48:05,218 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:48:05,224 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:49:21,684 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:49:21,690 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:51:01,941 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 19:51:01,949 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
