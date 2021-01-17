@@ -10,6 +10,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.io.Serializable;
+
 /**
  * <p>
  * 讲师 服务实现类
@@ -25,6 +27,7 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
     public void pageQuery(Page<Teacher> pageParam, TeacherQuery teacherQuery) {
         QueryWrapper<Teacher> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByAsc("sort");
+        queryWrapper.orderByDesc("gmt_create");
         if (teacherQuery == null){
             baseMapper.selectPage(pageParam, queryWrapper);
             return; }
@@ -46,4 +49,9 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
         }
         baseMapper.selectPage(pageParam, queryWrapper);
     }
+
+    @Override
+    public boolean removeById(Serializable id) {
+        Integer result = baseMapper.deleteById(id);
+        return null != result && result > 0; }
 }

@@ -1,0 +1,47 @@
+2021-01-17 00:28:51,686 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 00:28:51,692 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 00:29:12,234 [http-nio-8080-exec-1] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 01:11:59,981 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool] HikariPool.java:787 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m8s906ms).
+2021-01-17 11:34:51,963 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 11:34:51,971 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 11:44:53,670 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 11:44:53,676 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 11:47:44,336 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 11:47:44,341 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 11:49:01,867 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 11:49:01,874 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 11:55:51,222 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 11:55:51,228 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 12:14:16,474 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 12:14:16,481 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 12:54:41,196 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool] HikariPool.java:787 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m55s676ms).
+2021-01-17 14:55:09,223 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool] HikariPool.java:787 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h28s27ms).
+2021-01-17 15:05:00,699 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool] HikariPool.java:787 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m21s488ms).
+2021-01-17 15:40:13,035 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 15:40:13,041 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 15:57:06,501 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 15:57:06,507 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:02:41,390 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:02:41,395 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:04:21,539 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:04:21,544 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:08:17,173 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:08:17,180 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:09:57,944 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:09:57,952 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:11:31,229 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:11:31,235 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:14:40,960 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:14:40,966 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:17:15,572 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:17:15,578 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:17:37,190 [http-nio-8101-exec-10] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 16:19:02,464 [http-nio-8101-exec-4] WARN  [com.atguigu.servicebase.config.GlobalExceptionHandler] GlobalExceptionHandler.java:37 - Spring boot启动初始化了 10 个 Bean
+2021-01-17 16:19:23,537 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:19:23,542 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:20:23,853 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:20:23,857 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:25:09,208 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:25:09,213 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:28:01,790 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 16:28:01,794 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.

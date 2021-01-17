@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +25,7 @@ import java.util.List;
  * @author atguigu
  * @since 2021-01-14
  */
+@Slf4j
 @Api(value="讲师管理")
 @RestController
 @RequestMapping("/admin/edu/teacher")   //SwaggerConfig可配置限制访问paths
@@ -37,15 +39,6 @@ public class TeacherController {
         return R.ok().data("items", teacherService.list(null));
     }
 
-    @ApiOperation(value = "根据ID删除讲师")
-    @DeleteMapping("{id}")
-    public R removeById(
-            @ApiParam(name = "id", value = "讲师ID", required = true)
-            @PathVariable String id){
-        teacherService.removeById(id);
-        return R.ok();
-    }
-
     @ApiOperation(value = "分页讲师列表")
     @GetMapping("{page}/{limit}")
     public R pageQuery(
@@ -54,8 +47,8 @@ public class TeacherController {
             @ApiParam(name = "limit", value = "每页记录数", required = true)
             @PathVariable Long limit,
             @ApiParam(name = "teacherQuery", value = "查询对象", required = false)
-                    TeacherQuery teacherQuery){
-
+                TeacherQuery teacherQuery){
+        log.info(teacherQuery.toString());
         Page<Teacher> pageParam = new Page<>(page, limit);
         teacherService.pageQuery(pageParam, teacherQuery);
         List<Teacher> records = pageParam.getRecords();
@@ -77,11 +70,6 @@ public class TeacherController {
     public R getById(
             @ApiParam(name = "id", value = "讲师ID", required = true)
             @PathVariable String id){
-        try {
-            int a = 10/0;
-        } catch (Exception e) {
-            throw new GuliException(ResultCode.ERROR_CUSTOM, "自定义异常");
-        }
         Teacher teacher = teacherService.getById(id);
         return R.ok().data("item", teacher);
     }
@@ -97,6 +85,19 @@ public class TeacherController {
         teacherService.updateById(teacher);
         return R.ok();
 
+    }
+
+    @ApiOperation(value = "根据ID删除讲师")
+    @DeleteMapping("{id}")
+    public R removeById(
+            @ApiParam(name = "id", value = "讲师ID", required = true)
+            @PathVariable String id){
+        boolean result = teacherService.removeById(id);
+        if(result){
+            return R.ok();
+        }else{
+            return R.error().message("删除失败");
+        }
     }
 }
 
