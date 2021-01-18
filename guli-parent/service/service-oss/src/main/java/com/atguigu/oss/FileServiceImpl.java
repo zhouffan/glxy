@@ -9,6 +9,7 @@ import com.atguigu.commonutils.GuliException;
 import com.atguigu.commonutils.ResultCode;
 import org.joda.time.DateTime;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -18,7 +19,7 @@ import java.util.UUID;
 @Service
 public class FileServiceImpl implements FileService {
     @Override
-    public String upload(MultipartFile file) {
+    public String upload(MultipartFile file, String host) {
         String uploadUrl = null;
         try {
             // Endpoint以杭州为例，其它Region请按实际情况填写。
@@ -28,6 +29,9 @@ public class FileServiceImpl implements FileService {
             String accessKeySecret = ConstantPropertiesUtil.ACCESS_KEY_SECRET;
             String bucketName = ConstantPropertiesUtil.BUCKET_NAME;
             String fileHost = ConstantPropertiesUtil.FILE_HOST;
+            if(!StringUtils.isEmpty(host)){
+                fileHost = host;
+            }
             // 创建OSSClient实例。
             OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
 

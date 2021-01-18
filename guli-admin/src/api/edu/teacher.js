@@ -1,6 +1,12 @@
 import request from '@/utils/request'
 const api_name = '/admin/edu/teacher'
 export default {
+    getList() {
+        return request({
+            url: api_name,
+            method: 'get'
+        })
+    },
     getPageList(page, limit, searchObj) {
         debugger
         return request({

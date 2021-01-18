@@ -1186,3 +1186,8 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2021-01-17 19:51:35,494 [http-nio-8101-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-01-17 19:51:35,497 [http-nio-8101-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
 2021-01-17 19:51:35,514 [http-nio-8101-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 17 ms
+2021-01-17 22:00:19,601 [http-nio-8101-exec-9] INFO  [com.atguigu.eduservice.controller.TeacherController] TeacherController.java:51 - TeacherQuery(name=null, level=null, begin=null, end=null)
+2021-01-17 22:00:29,945 [http-nio-8101-exec-1] INFO  [com.atguigu.eduservice.controller.TeacherController] TeacherController.java:51 - TeacherQuery(name=null, level=null, begin=null, end=null)
+2021-01-17 22:01:35,904 [http-nio-8101-exec-3] INFO  [com.atguigu.eduservice.controller.TeacherController] TeacherController.java:51 - TeacherQuery(name=null, level=null, begin=null, end=null)
+2021-01-17 22:02:42,529 [http-nio-8101-exec-7] INFO  [com.atguigu.eduservice.controller.TeacherController] TeacherController.java:51 - TeacherQuery(name=null, level=null, begin=null, end=null)
+2021-01-17 22:03:13,480 [http-nio-8101-exec-1] INFO  [com.atguigu.eduservice.controller.TeacherController] TeacherController.java:51 - TeacherQuery(name=null, level=null, begin=null, end=null)

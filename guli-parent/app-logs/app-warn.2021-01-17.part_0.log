@@ -120,3 +120,7 @@
 2021-01-17 19:49:21,690 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
 2021-01-17 19:51:01,941 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
 2021-01-17 19:51:01,949 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2021-01-17 20:38:21,393 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool] HikariPool.java:787 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m20s41ms).
+2021-01-17 20:38:50,767 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool] HikariPool.java:779 - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s375ms), soft-evicting connections from pool.
+2021-01-17 21:31:09,641 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool] HikariPool.java:787 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m18s874ms).
+2021-01-17 23:16:41,567 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool] HikariPool.java:787 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m1s72ms).

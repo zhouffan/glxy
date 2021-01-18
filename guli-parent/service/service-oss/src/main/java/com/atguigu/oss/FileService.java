@@ -9,5 +9,5 @@ public interface FileService {
 * @param file
 * @return
 */
-String upload(MultipartFile file);
+String upload(MultipartFile file, String host);
 }
