@@ -40,14 +40,14 @@ public class TeacherController {
     }
 
     @ApiOperation(value = "分页讲师列表")
-    @GetMapping("{page}/{limit}")
+    @PostMapping("{page}/{limit}")
     public R pageQuery(
             @ApiParam(name = "page", value = "当前页码", required = true)
             @PathVariable Long page,
             @ApiParam(name = "limit", value = "每页记录数", required = true)
             @PathVariable Long limit,
             @ApiParam(name = "teacherQuery", value = "查询对象", required = false)
-                TeacherQuery teacherQuery){
+            @RequestBody TeacherQuery teacherQuery){
         log.info(teacherQuery.toString());
         Page<Teacher> pageParam = new Page<>(page, limit);
         teacherService.pageQuery(pageParam, teacherQuery);

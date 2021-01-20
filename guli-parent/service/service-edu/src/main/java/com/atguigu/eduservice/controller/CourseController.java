@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -25,6 +26,7 @@ import java.util.List;
  * @author atguigu
  * @since 2021-01-18
  */
+@Slf4j
 @Api(description = "课程管理")
 @RestController
 @RequestMapping("/admin/edu/course")
@@ -38,6 +40,7 @@ public class CourseController {
             @ApiParam(name = "CourseInfoForm", value = "课程基本信息", required =
                     true)
             @RequestBody CourseInfoForm courseInfoForm) {
+        log.info(courseInfoForm.toString());
         String courseId = courseService.saveCourseInfo(courseInfoForm);
         if (!StringUtils.isEmpty(courseId)) {
             return R.ok().data("courseId", courseId);

@@ -115,7 +115,7 @@ const defaultForm = {
   description: "",
   cover: "",
   price: 0,
-  cover: process.env.OSS_PATH + "/cover/default.png",
+  cover: "https://guli-file-zdf.oss-cn-chengdu.aliyuncs.com/cover/default.png",
   subjectNestedList: [], //一级分类列表
   subSubjectList: [], //二级分类列表
   teacherList: [] // 讲师列表
@@ -200,9 +200,11 @@ export default {
     },
     // 保存
     saveData() {
+      // debugger
       course
         .saveCourseInfo(this.courseInfo)
         .then(response => {
+          // debugger
           this.$message({
             type: "success",
             message: "保存成功!"
@@ -210,11 +212,13 @@ export default {
           return response; // 将响应结果传递给then
         })
         .then(response => {
+          // debugger
           this.$router.push({
             path: "/edu/course/chapter/" + response.data.courseId
           });
         })
         .catch(response => {
+          // debugger
           this.$message({
             type: "error",
             message: response.message

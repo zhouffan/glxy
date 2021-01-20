@@ -11,7 +11,7 @@ export default {
         debugger
         return request({
             url: `${api_name}/${page}/${limit}`,
-            method: 'get',
+            method: 'post',
             data: searchObj
         })
     },

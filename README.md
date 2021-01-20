@@ -122,6 +122,65 @@ Vue.component('Navbar', {
 
 6 axios是独立于vue的一个项目，基于promise用于浏览器和node.js的http客户端。
 
+ eg:
+
+```javascript
+//http://127.0.0.1:8201/admin/edu/course/1/10?subjectParentId=1178214681181483010&subjectId=1178214681210843137&title=ss&teacherId=1189390295668469762     
+getPageList(page, limit, searchObj) { //searchObj:  {p1:"v1", p2:"v2"}
+        debugger
+        return request({
+            url: `${api_name}/${page}/${limit}`,
+            method: 'get',
+            params: searchObj //此处为 params
+        })
+    }
+//对应java接收
+@GetMapping("{page}/{limit}")
+public R pageQuery(
+            @ApiParam(name = "page", value = "当前页码", required = true)
+            @PathVariable Long page,
+            @ApiParam(name = "limit", value = "每页记录数", required = true)
+            @PathVariable Long limit,
+            @ApiParam(name = "courseQuery", value = "查询对象", required = false)
+                    CourseQuery courseQuery){ //此处接收 params
+        Page<Course> pageParam = new Page<>(page, limit);
+        courseService.pageQuery(pageParam, courseQuery);
+        List<Course> records = pageParam.getRecords();
+        long total = pageParam.getTotal();
+        return R.ok().data("total", total).data("rows", records);
+}
+==========================================================================================分割线
+//http://127.0.0.1:8201/admin/edu/course/1/10    
+getPageList(page, limit, searchObj) { //searchObj:  {p1:"v1", p2:"v2"}
+        debugger
+        return request({
+            url: `${api_name}/${page}/${limit}`,
+            method: 'post',
+            data: searchObj //此处为    ================data
+        })
+    }
+//对应java接收
+@PostMapping("{page}/{limit}")=======================================post请求  传 RequestBody
+public R pageQuery(
+            @ApiParam(name = "page", value = "当前页码", required = true)
+            @PathVariable Long page,
+            @ApiParam(name = "limit", value = "每页记录数", required = true)
+            @PathVariable Long limit,
+            @ApiParam(name = "courseQuery", value = "查询对象", required = false)
+            @RequestBody TeacherQuery teacherQuery){ //此处接收 data==================@RequestBody接收
+        Page<Course> pageParam = new Page<>(page, limit);
+        courseService.pageQuery(pageParam, courseQuery);
+        List<Course> records = pageParam.getRecords();
+        long total = pageParam.getTotal();
+        return R.ok().data("total", total).data("rows", records);
+}
+
+```
+
+
+
+
+
 #### node   
 
 1 Node.js 就是运行在服务端的 JavaScript。

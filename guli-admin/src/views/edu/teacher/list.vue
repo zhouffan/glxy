@@ -99,7 +99,13 @@ export default {
       total: 0, // 总记录数
       page: 1, // 页码
       limit: 10, // 每页记录数
-      searchObj: {} // 查询条件
+       // 查询条件
+      searchObj: {
+        name: "",
+        level: "",
+        begin: "",
+        end: ""
+      }
     };
   },
   created() {

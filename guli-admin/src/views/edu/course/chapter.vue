@@ -136,6 +136,7 @@
 <script>
 import video from "@/api/edu/video";
 import course from "@/api/edu/course";
+import chapter from '@/api/edu/chapter'
 export default {
   data() {
     return {
@@ -196,6 +197,7 @@ export default {
       this.$router.push({ path: "/edu/course/publish/" + this.courseId });
     },
     saveOrUpdate() {
+      debugger
       this.saveBtnDisabled = true;
       if (!this.chapter.id) {
         this.saveData();
