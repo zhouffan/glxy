@@ -1,6 +1,7 @@
 package com.atguigu.eduservice.service.impl;
 
 import com.atguigu.commonutils.GuliException;
+import com.atguigu.eduservice.client.VodClient;
 import com.atguigu.eduservice.entity.Video;
 import com.atguigu.eduservice.entity.pojo.VideoInfoForm;
 import com.atguigu.eduservice.mapper.VideoMapper;
@@ -8,7 +9,9 @@ import com.atguigu.eduservice.service.VideoService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 /**
  * <p>
@@ -20,6 +23,9 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class VideoServiceImpl extends ServiceImpl<VideoMapper, Video> implements VideoService {
+    @Autowired
+    private VodClient vodClient;
+
     @Override
     public boolean getCountByChapterId(String chapterId) {
         QueryWrapper<Video> queryWrapper = new QueryWrapper<>();
@@ -65,7 +71,17 @@ public class VideoServiceImpl extends ServiceImpl<VideoMapper, Video> implements
 
     @Override
     public boolean removeVideoById(String id) {
-//删除视频资源 TODO
+        //删除视频资源 TODO
+        //查询云端视频id
+        Video video = baseMapper.selectById(id);
+        String videoSourceId = video.getVideoSourceId();
+        //删除视频资源
+        if(!StringUtils.isEmpty(videoSourceId)){
+            vodClient.removeVideo(videoSourceId);
+        }
+
+
+
         Integer result = baseMapper.deleteById(id);
         return null != result && result > 0;
     }

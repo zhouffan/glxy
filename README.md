@@ -24,9 +24,118 @@ public R pageQuery(@PathVariable Long page,  @PathVariable Long limit,  TeacherQ
 
 5 表格操作： easyExcel
 
+## 微服务
+
+单体架构：所有的模块都共用一个数据库，存储方式比较单一。
+
+微服务：每个模块（使用不同的开发技术）都可以使用不同的存储方式（比如有的用redis，有的用mysql等），数据库也是单个模块对应自己的数据库。
+
+目标：统一风格的界面，统一的权限管理，统一的安全策略，统一的上线过程，统一的日志和审计方法，统一的调度方式，统一的访问入口
+
+开发框架，最常用的有以下四个：
+
+- Spring Cloud：http://projects.spring.io/spring-cloud（现在非常流行的微服务架构）
+
+- Dubbo：http：//dubbo.io
+
+- Dropwizard：http://www.dropwizard.io （关注单个微服务的开发）
+
+- Consul、etcd&etc.（微服务的模块）
+
+**Spring Cloud**相关基础服务组件
+
+服务发现——Netflix Eureka （Nacos）
+
+服务调用——Netflix Feign
+
+熔断器——Netflix Hystrix
+
+服务网关——Spring Cloud GateWay
+
+分布式配置——Spring Cloud Config （Nacos）
+
+消息总线 —— Spring Cloud Bus （Nacos）
+
+版本：
+
+Greenwich   **2.1.x**（**Boot**版本）
+
+Hoxton         2.2.x
 
 
 
+SNAPSHOT： 快照版本，随时可能修改
+
+M： MileStone，M1表示第1个里程碑版本，一般同时标注PRE，表示预览版版。
+
+SR： Service Release，SR1表示第1个正式版本，一般同时标注GA：(GenerallyAvailable),表示稳定版本。
+
+
+
+常见的**注册中心**：
+
+- 1. Eureka（原生，2.0遇到性能瓶颈，停止维护）
+
+- 2. Zookeeper（支持，专业的独立产品。例如：dubbo）
+
+- 3. Consul（原生，GO语言开发）
+
+- 4. Nacos
+
+相对于 Spring Cloud Eureka 来说，Nacos 更强大。Nacos = Spring Cloud Eureka + Spring Cloud Config
+
+Nacos主要提供以下四大功能：
+
+- 1. 服务发现和服务健康监测
+
+- 2. 动态配置服务
+
+- 3. 动态DNS服务
+
+- 4. 服务及其元数据管理
+
+下载地址：https://github.com/alibaba/nacos/releases
+
+\- Linux/Unix/Mac
+
+启动命令(standalone代表着单机模式运行，非集群模式)
+
+启动命令：sh startup.sh -m standalone
+
+\- Windows
+
+启动命令：cmd startup.cmd 或者双击startup.cmd运行文件。
+
+访问：http://localhost:8848/nacos
+
+用户名密码：nacos/nacos
+
+#### 注册服务：
+
+```groovy
+//1  导包
+<!--服务注册-->
+<dependency> 
+	<groupId>org.springframework.cloud</groupId> 
+	<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+</dependency>
+//2   配置application.properties
+# nacos服务地址
+spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
+
+//3  启动类中添加注解
+@EnableDiscoveryClient 
+```
+
+#### Feign
+
+Feign是Netflix开发的声明式、模板化的**HTTP客户端**， Feign可以帮助我们更快捷、优雅地**调用HTTP API**。
+
+**Spring Cloud Feign**
+
+- 是基于Netflix feign实现，对Feign进行了增强，使Feign支持了Spring MVC注解。
+- 整合了Spring Cloud Ribbon和Spring Cloud Hystrix，除了提供这两者的强大功能外，还提供了一种声明式的Web服务客户端定义的方式。    
+-  帮助我们**定义和实现依赖服务接口**的定义。
 
 
 

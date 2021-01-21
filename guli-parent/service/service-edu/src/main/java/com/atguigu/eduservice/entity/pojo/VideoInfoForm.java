@@ -21,4 +21,7 @@ public class VideoInfoForm {
     private Integer sort;
     @ApiModelProperty(value = "是否可以试听：0默认 1免费")
     private Boolean free;
+
+    @ApiModelProperty(value = "云服务器上存储的视频文件名称")
+    private String videoOriginalName;
 }
